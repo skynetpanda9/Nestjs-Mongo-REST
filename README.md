@@ -6,13 +6,13 @@
 
 rm -rf dist dir. (if present) (use when no lock file is present in project dir.)
 
-```zsh
+```bash
 npm run install:prebuild
 ```
 
 or
 
-```zsh
+```bash
 yarn run install:prebuild
 ```
 
@@ -20,7 +20,7 @@ yarn run install:prebuild
 
 rimraf dist (only use if package-lock.json is present in project dir.)
 
-```zsh
+```bash
 npm run prebuild
 ```
 
@@ -28,7 +28,7 @@ npm run prebuild
 
 if lock file is available
 
-```zsh
+```bash
 npm ci
 
 #or
@@ -38,7 +38,7 @@ yarn ci
 
 ## Running the app
 
-```zsh
+```bash
 # simple run (no watch mode)
 $ npm start
 
@@ -47,6 +47,19 @@ $ npm run start:dev
 
 # production
 $ npm run start:prod
+```
+
+## Test
+
+```bash
+# unit tests
+$ npm run test
+
+# e2e tests
+$ npm run test:e2e
+
+# test coverage
+$ npm run test:cov
 ```
 
 ## More Scripts
